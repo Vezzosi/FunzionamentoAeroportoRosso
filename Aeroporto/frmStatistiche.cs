@@ -17,6 +17,12 @@ namespace Aeroporto
             InitializeComponent();
         }
 
+        public frmStatistiche(string _lbl1, string _lbl2)
+        {
+            
+            InitializeComponent();
+            lbl2.Text = _lbl2;
+        }
         private void lbl1_Click(object sender, EventArgs e)
         {
 
@@ -34,7 +40,6 @@ namespace Aeroporto
 
         private void frmStatistiche_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

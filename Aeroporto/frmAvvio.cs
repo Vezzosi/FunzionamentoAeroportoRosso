@@ -165,6 +165,7 @@ namespace Aeroporto
 
         private void btnStatistiche_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             frmStatistiche myForm = new frmStatistiche();
             myForm.Show();
             string Biglietti;
@@ -196,6 +197,40 @@ namespace Aeroporto
             }
             lbl5 = Prezzopiualto.ToString();
 
+=======
+            string label1 = "label 1";
+            string label2 = "";
+            
+            Dictionary<string, int> contavoli = new Dictionary<string, int>();
+            foreach (Volo item in ListaVoli)
+            {
+                if(!contavoli.ContainsKey(item.AereoVolo.CodiceAereo))
+                {
+                    contavoli.Add(item.AereoVolo.CodiceAereo, 0);
+                }
+                    
+                contavoli[item.AereoVolo.CodiceAereo]++;
+            }
+            Dictionary<string, int> risultato = new Dictionary<string, int>();
+            risultato["maggiore"] = 0;
+            string AereoPiuVoli = "";
+            foreach (KeyValuePair<string, int> item in contavoli)
+            {
+                if (item.Value > risultato["maggiore"])
+                {
+                    risultato["maggiore"] = item.Value;
+                    AereoPiuVoli = item.Key;
+                }
+                else if (item.Value == risultato["maggiore"])
+                {
+                    AereoPiuVoli += ", ";
+                    AereoPiuVoli += item.Key;
+                }
+            }
+            label2 = "L'/Gli Aereo/i con più voli è/sono " + AereoPiuVoli;
+            frmStatistiche myForm = new frmStatistiche(label1, label2);
+            myForm.Show();
+>>>>>>> 9552ed74be65130d83291c78daff17570a1664eb
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

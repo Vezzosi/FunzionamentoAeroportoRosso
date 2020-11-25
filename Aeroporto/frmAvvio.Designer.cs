@@ -33,7 +33,7 @@ namespace Aeroporto
             this.btnVisualizzaAerei = new System.Windows.Forms.Button();
             this.btnStatistiche = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtB = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
@@ -76,23 +76,23 @@ namespace Aeroporto
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.label100);
             this.panel3.Location = new System.Drawing.Point(201, -1);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(507, 175);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // label1
+            // label100
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(25, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(447, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "AEROPORTO ROSSO";
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.ForeColor = System.Drawing.Color.Red;
+            this.label100.Location = new System.Drawing.Point(25, 70);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(447, 46);
+            this.label100.TabIndex = 0;
+            this.label100.Text = "AEROPORTO ROSSO";
             // 
             // panel1
             // 
@@ -138,7 +138,7 @@ namespace Aeroporto
         private System.Windows.Forms.Button btnVisualizzaAerei;
         private System.Windows.Forms.Button btnStatistiche;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label100;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtB;
     }
