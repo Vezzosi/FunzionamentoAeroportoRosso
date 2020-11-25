@@ -227,7 +227,8 @@ namespace Aeroporto
                     AereoPiuVoli += item.Key;
                 }
             }
-            label2 = "L'/Gli Aereo/i con più voli è/sono " + AereoPiuVoli;
+            label1 = "L'/Gli Aereo/i con più voli è/sono " + AereoPiuVoli;
+
             frmStatistiche myForm = new frmStatistiche(label1, label2, label3, label4, label5);
             myForm.Show();
         }

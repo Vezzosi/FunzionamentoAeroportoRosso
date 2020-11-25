@@ -21,7 +21,7 @@ namespace Aeroporto
         {
             
             InitializeComponent();
-            lbl2.Text = _lbl2;
+            lbl1.Text = _lbl1;
         }
         private void lbl1_Click(object sender, EventArgs e)
         {
