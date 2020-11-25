@@ -146,7 +146,11 @@ namespace Aeroporto
 
             MessageBox.Show("Caricamento concluso con successo", "Caricamento dati", MessageBoxButtons.OK, MessageBoxIcon.Information);
             btnCaricamentoDati.Enabled = false;
-            
+
+            btnVisualizzaAerei.Visible = true;
+
+            btnStatistiche.Visible = true;
+
         }
 
         private void btnVisualizzaAerei_Click(object sender, EventArgs e)
@@ -163,9 +167,16 @@ namespace Aeroporto
         {
             frmStatistiche myForm = new frmStatistiche();
             myForm.Show();
+
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

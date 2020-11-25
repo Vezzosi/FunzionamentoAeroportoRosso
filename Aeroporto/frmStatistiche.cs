@@ -16,5 +16,25 @@ namespace Aeroporto
         {
             InitializeComponent();
         }
+
+        private void lbl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmStatistiche_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
