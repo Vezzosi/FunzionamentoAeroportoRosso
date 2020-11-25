@@ -165,10 +165,12 @@ namespace Aeroporto
 
         private void btnStatistiche_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            frmStatistiche myForm = new frmStatistiche();
-            myForm.Show();
-            string Biglietti;
+            string label1 = "label 1";
+            string label2 = "label 2";
+            string label3 = "label 3";
+            string label4 = "label 2";
+            string label5 = "label 5";
+            /*string Biglietti;
             int B;
             int A;
             int Prezzopiualto = 0;
@@ -195,12 +197,10 @@ namespace Aeroporto
                     break;
                 }
             }
-            lbl5 = Prezzopiualto.ToString();
-
-=======
-            string label1 = "label 1";
-            string label2 = "";
+            label5 = "Il prezzo più alto è "+Prezzopiualto.ToString();*/
             
+
+
             Dictionary<string, int> contavoli = new Dictionary<string, int>();
             foreach (Volo item in ListaVoli)
             {
@@ -228,9 +228,8 @@ namespace Aeroporto
                 }
             }
             label2 = "L'/Gli Aereo/i con più voli è/sono " + AereoPiuVoli;
-            frmStatistiche myForm = new frmStatistiche(label1, label2);
+            frmStatistiche myForm = new frmStatistiche(label1, label2, label3, label4, label5);
             myForm.Show();
->>>>>>> 9552ed74be65130d83291c78daff17570a1664eb
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

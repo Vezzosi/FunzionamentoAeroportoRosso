@@ -17,7 +17,7 @@ namespace Aeroporto
             InitializeComponent();
         }
 
-        public frmStatistiche(string _lbl1, string _lbl2)
+        public frmStatistiche(string _lbl1, string _lbl2, string _lbl3, string _lbl4, string _lbl5)
         {
             
             InitializeComponent();

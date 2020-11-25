@@ -104,9 +104,9 @@ namespace Aeroporto
             // 
             // txtB
             // 
-            this.txtB.Location = new System.Drawing.Point(12, 196);
+            this.txtB.Location = new System.Drawing.Point(13, 214);
             this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(10, 22);
+            this.txtB.Size = new System.Drawing.Size(100, 22);
             this.txtB.TabIndex = 6;
             this.txtB.Visible = false;
             // 
@@ -114,7 +114,7 @@ namespace Aeroporto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 245);
+            this.ClientSize = new System.Drawing.Size(705, 248);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
