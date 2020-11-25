@@ -31,13 +31,15 @@ namespace Aeroporto
         {
             this.btnCaricamentoDati = new System.Windows.Forms.Button();
             this.btnVisualizzaAerei = new System.Windows.Forms.Button();
+            this.btnStatistiche = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCaricamentoDati
             // 
-            this.btnCaricamentoDati.Location = new System.Drawing.Point(77, 89);
+            this.btnCaricamentoDati.Location = new System.Drawing.Point(103, 110);
+            this.btnCaricamentoDati.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCaricamentoDati.Name = "btnCaricamentoDati";
-            this.btnCaricamentoDati.Size = new System.Drawing.Size(157, 45);
+            this.btnCaricamentoDati.Size = new System.Drawing.Size(209, 55);
             this.btnCaricamentoDati.TabIndex = 0;
             this.btnCaricamentoDati.Text = "CARICAMENTO DATI";
             this.btnCaricamentoDati.UseVisualStyleBackColor = true;
@@ -45,21 +47,34 @@ namespace Aeroporto
             // 
             // btnVisualizzaAerei
             // 
-            this.btnVisualizzaAerei.Location = new System.Drawing.Point(316, 89);
+            this.btnVisualizzaAerei.Location = new System.Drawing.Point(421, 110);
+            this.btnVisualizzaAerei.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVisualizzaAerei.Name = "btnVisualizzaAerei";
-            this.btnVisualizzaAerei.Size = new System.Drawing.Size(147, 45);
+            this.btnVisualizzaAerei.Size = new System.Drawing.Size(196, 55);
             this.btnVisualizzaAerei.TabIndex = 1;
             this.btnVisualizzaAerei.Text = "VISUALIZZA AEREI";
             this.btnVisualizzaAerei.UseVisualStyleBackColor = true;
             this.btnVisualizzaAerei.Click += new System.EventHandler(this.btnVisualizzaAerei_Click);
             // 
+            // btnStatistiche
+            // 
+            this.btnStatistiche.Location = new System.Drawing.Point(481, 251);
+            this.btnStatistiche.Name = "btnStatistiche";
+            this.btnStatistiche.Size = new System.Drawing.Size(136, 53);
+            this.btnStatistiche.TabIndex = 2;
+            this.btnStatistiche.Text = "STATISTICHE";
+            this.btnStatistiche.UseVisualStyleBackColor = true;
+            this.btnStatistiche.Click += new System.EventHandler(this.btnStatistiche_Click);
+            // 
             // frmAvvio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 338);
+            this.ClientSize = new System.Drawing.Size(701, 416);
+            this.Controls.Add(this.btnStatistiche);
             this.Controls.Add(this.btnVisualizzaAerei);
             this.Controls.Add(this.btnCaricamentoDati);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAvvio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Avvio";
@@ -71,6 +86,7 @@ namespace Aeroporto
 
         private System.Windows.Forms.Button btnCaricamentoDati;
         private System.Windows.Forms.Button btnVisualizzaAerei;
+        private System.Windows.Forms.Button btnStatistiche;
     }
 }
 

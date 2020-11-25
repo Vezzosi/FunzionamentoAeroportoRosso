@@ -158,5 +158,11 @@ namespace Aeroporto
 
 
         }
+
+        private void btnStatistiche_Click(object sender, EventArgs e)
+        {
+            frmStatistiche myForm = new frmStatistiche();
+            myForm.Show();
+        }
     }
 }

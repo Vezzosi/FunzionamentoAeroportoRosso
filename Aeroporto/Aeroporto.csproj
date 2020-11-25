@@ -58,6 +58,12 @@
     <Compile Include="frmAvvio.Designer.cs">
       <DependentUpon>frmAvvio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStatistiche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatistiche.Designer.cs">
+      <DependentUpon>frmStatistiche.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAvvio.resx">
