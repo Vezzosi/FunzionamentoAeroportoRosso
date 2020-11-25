@@ -167,8 +167,35 @@ namespace Aeroporto
         {
             frmStatistiche myForm = new frmStatistiche();
             myForm.Show();
+            string Biglietti;
+            int B;
+            int A;
+            int Prezzopiualto = 0;
+            foreach (Biglietto item in ListaBiglietti)
+            {
+                txtB.Text = item.Prezzo.ToString() + "-";
+            }
+            for (int i = 0; i < txtB.Text.Length; i++)
+            {
+                if (txtB.Text[i].ToString() == "-")
+                {
+                    Biglietti = txtB.Text[i].ToString();
+                    B = Convert.ToInt32(Biglietti);
+                    int posTrattino = i;
+                    A = Convert.ToInt32(Biglietti.Substring(0, posTrattino));
+                    if (A > B)
+                    {
+                        Prezzopiualto = A;
+                    }
+                    else
+                    {
+                        Prezzopiualto = B;
+                    }
+                    break;
+                }
+            }
+            lbl5 = Prezzopiualto.ToString();
 
-            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

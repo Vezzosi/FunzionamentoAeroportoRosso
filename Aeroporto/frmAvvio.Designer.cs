@@ -35,13 +35,14 @@ namespace Aeroporto
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtB = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCaricamentoDati
             // 
             this.btnCaricamentoDati.Location = new System.Drawing.Point(31, 181);
-            this.btnCaricamentoDati.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCaricamentoDati.Margin = new System.Windows.Forms.Padding(4);
             this.btnCaricamentoDati.Name = "btnCaricamentoDati";
             this.btnCaricamentoDati.Size = new System.Drawing.Size(209, 55);
             this.btnCaricamentoDati.TabIndex = 0;
@@ -52,7 +53,7 @@ namespace Aeroporto
             // btnVisualizzaAerei
             // 
             this.btnVisualizzaAerei.Location = new System.Drawing.Point(248, 181);
-            this.btnVisualizzaAerei.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVisualizzaAerei.Margin = new System.Windows.Forms.Padding(4);
             this.btnVisualizzaAerei.Name = "btnVisualizzaAerei";
             this.btnVisualizzaAerei.Size = new System.Drawing.Size(209, 55);
             this.btnVisualizzaAerei.TabIndex = 1;
@@ -101,23 +102,33 @@ namespace Aeroporto
             this.panel1.Size = new System.Drawing.Size(211, 175);
             this.panel1.TabIndex = 5;
             // 
+            // txtB
+            // 
+            this.txtB.Location = new System.Drawing.Point(12, 196);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(10, 22);
+            this.txtB.TabIndex = 6;
+            this.txtB.Visible = false;
+            // 
             // frmAvvio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 248);
+            this.ClientSize = new System.Drawing.Size(705, 245);
+            this.Controls.Add(this.txtB);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnStatistiche);
             this.Controls.Add(this.btnVisualizzaAerei);
             this.Controls.Add(this.btnCaricamentoDati);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAvvio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Avvio";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -129,6 +140,7 @@ namespace Aeroporto
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtB;
     }
 }
 
